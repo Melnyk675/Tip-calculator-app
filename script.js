@@ -12,7 +12,6 @@ const resetButton = document.querySelector(".reset-btn ");
 
 //output element
 const outputValue = document.querySelectorAll(".output__value");
-
 const outputTipPerPerson = document.querySelector(".output__value--tip");
 const outputTotalPerPerson = document.querySelector(".output__value--total");
 
@@ -116,7 +115,6 @@ class tip {
     return value === "" ? "fill the bill" : null;
   }
 
-  //## normal Functions ##
   //showErroMessage
   showErrorMessage(field, error) {
     //changing the border color of the InputContainer
@@ -267,9 +265,13 @@ class tip {
 
   //reset
   reset() {
-    location.reload();
     this.clearInputs();
-    this.hideErrorMessage();
+    outputTipPerPerson.textContent = "$0.00";
+    outputTotalPerPerson.textContent = "$0.00";
+    // uncheck all radio buttons
+    radioButtons.forEach(btn => btn.checked = false);
+    // remove active class from tip buttons
+    tipButtons.forEach(btn => btn.classList.remove("tip-button--active"));
   }
 
   //running a set of validator on a fields

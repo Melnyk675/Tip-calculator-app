@@ -136,6 +136,7 @@ input[type="number"] {
   .button-list input.custom-tip {
     padding: 1rem 0;
     width: 100%;
+    cursor: pointer;
   }
   
   .button-list input.custom-tip {
@@ -237,6 +238,7 @@ input[type="number"] {
   
   .reset-btn:hover {
     --strong-cyan: hsl(172, 67%, 75%);
+    cursor: pointer;
   }
   
 
@@ -283,7 +285,6 @@ input[type="number"] {
     .label {
       color: var(--dark-grayish-cyan);
       display: block;
-  
       font-size: 1.8rem;
     }
   
