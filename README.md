@@ -12,3 +12,6 @@ Built with:
 - JavaScript
 - Mobile-first workflow
 
+Links
+- Solution URL: https://github.com/Melnyk675/Tip-calculator-app
+- Live Site URL: https://melnyk675.github.io/Tip-calculator-app/
